@@ -30,7 +30,7 @@ const speakers = [
     alt: 'Speaker-1',
     title: 'Scott Morrison',
     power: 'Prime Minister of Australia',
-    description: "An Australian politician serving as the 30th and current prime minister of Australia. He assumed office in August 2018 upon his election.After the Liberal-National coalition's victory at the 2013 election.",
+    description: 'An Australian politician serving as the 30th and current prime minister of Australia. He assumed office in August 2018 upon his election..',
   },
 
   {
@@ -38,7 +38,7 @@ const speakers = [
     alt: 'Speaker-2',
     title: 'Narendra Modi',
     power: 'Prime Minister of India',
-    description: "He is the first prime minister to have been born after India's independence in 1947 and the second prime minister. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament from Varanasi. ",
+    description: "He is the first prime minister to have been born after India's independence in 1947 and the second prime minister. Modi was the chief minister. ",
   },
 
   {

@@ -5,9 +5,16 @@
 }
 
 /* Global CSS Styling */
-p {
+.cocogoose {
+  font-family: 'COCOGOOSE', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.lato {
   font-family: 'Lato', sans-serif;
-  text-align: justify;
+  font-style: normal;
+  font-weight: 700;
 }
 
 span {
@@ -17,10 +24,15 @@ span {
 
 button {
   background-color: #ec5242;
-  height: 90px;
-  width: 370px;
-  margin-left: 75px;
+  height: 96px;
+  width: 332px;
+
+  /* margin-left: 75px; */
   color: #fff;
+}
+
+h1 {
+  color: #ec5242;
 }
 
 a {
@@ -36,7 +48,7 @@ a {
 }
 
 .top-nav-icons {
-  margin-left: -15%;
+  margin-left: -1%;
 }
 
 .icon-white {
@@ -88,16 +100,82 @@ a {
 
 .background-gray {
   background-color: rgba(255, 255, 255, 0.1);
-
-  /* background-image: url("images/base/main_big.png");
-    background-repeat: repeat-y; */
 }
 
-.pattern {
+.program {
+  color: white;
   background-image: url('images/base/pattern_bg.png');
   background-repeat: repeat;
-  background-color: rgb(39, 42, 50);
-  display: block;
+  background-color: #272a31;
+}
+
+.program-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.program-item {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  width: 90vw;
+}
+
+.program-icon {
+  float: left;
+  vertical-align: middle;
+  display: inline-block;
+  height: 58px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.program-title {
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  width: 26%;
+  padding-left: 7px;
+  color: #ec5242;
+  font-weight: bold;
+  vertical-align: middle;
+  display: inline-block;
+  height: 58px;
+  position: relative;
+  margin-top: 33px;
+}
+
+.program-description {
+  float: left;
+  font-size: 12px;
+  padding: 12px 0 8px 0;
+  text-align: left;
+  word-break: keep-all;
+  overflow: auto;
+  height: auto;
+  line-height: 1.5em;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+
+.program-join {
+  text-align: center;
+  color: white;
+  background-color: #ec5242;
+  margin-top: 15px;
+  padding: 22px;
+}
+
+.program-link {
+  display: none;
+}
+
+.program-link:hover {
+  color: #f4f3f3;
 }
 
 /* Featured Speakers */
@@ -185,6 +263,7 @@ a {
   margin-top: 8px;
   font-weight: bold;
   text-align: justify;
+  max-width: 200px;
 }
 
 /* About_us Page CSS Start */
@@ -215,8 +294,9 @@ a {
 }
 
 .logo-about {
-  margin-left: -90px;
+  margin-left: -30px;
   margin-top: -190px;
+  width: 375px;
 }
 
 .mob-campaigns {
@@ -231,6 +311,15 @@ a {
   display: none;
 }
 
+.desk-footer {
+  background-color: #272a31;
+  color: #f4f3f3;
+}
+
+.desk-footer img {
+  margin-top: 30px;
+}
+
 .menu {
   display: none;
 }
@@ -241,10 +330,6 @@ a {
 }
 
 .desktop-nav {
-  display: none;
-}
-
-.desktop-program {
   display: none;
 }
 
@@ -268,16 +353,79 @@ a {
   margin-top: -50px;
 }
 
+.footer-2 img {
+  margin-top: 50px;
+}
+
 .footer-contnt {
   margin-top: 80px;
 }
 
 .home-fot-cntnt {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 /* Responsiveness Starts From here */
 @media screen and (min-width: 768px) {
+  .program-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 6px;
+    padding-left: 7px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: transparent 2px solid;
+  }
+
+  .program-item:hover {
+    border-color: white;
+  }
+
+  .program-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .program-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    color: #ec5242;
+    margin-top: 2px;
+  }
+
+  .program-description {
+    text-align: center;
+  }
+
+  .program-join {
+    display: none;
+  }
+
+  .program-link {
+    display: block;
+    color: #f4f3f3;
+    font-size: 24px;
+    text-decoration-line: underline;
+    margin-bottom: 30px;
+  }
+
+  .program-link:hover {
+    color: #f4f3f3;
+  }
+
   .desktop-icons {
     display: block;
   }
@@ -332,46 +480,6 @@ a {
     display: none;
   }
 
-  .program-columns {
-    display: flex;
-    column-gap: 10px;
-    justify-content: center;
-  }
-
-  .program-1 {
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 210px;
-    height: 280px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0;
-    margin-bottom: 60px;
-  }
-
-  .program-1 img {
-    margin-left: 50px;
-  }
-
-  .program-1 h6 {
-    text-align: center;
-    color: #ec5242;
-  }
-
-  .program-1 p {
-    font-size: 12px;
-    text-align: center;
-  }
-
-  .desktop-agenda {
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid #f4f3f3;
-    margin-bottom: 150px;
-    margin-left: 40%;
-    color: #f4f3f3;
-  }
 
   .speakers-container {
     display: flex;
@@ -387,10 +495,11 @@ a {
 
   .footer-2 {
     margin-top: -10px;
+    margin-left: 80px;
   }
 
   .footer-contnt {
-    margin-top: 40px;
+    margin-top: 150px;
   }
 
   .desktop-footer img {
@@ -403,15 +512,24 @@ a {
   }
 
   .logo-about {
-    width: 600px;
-    margin-left: 400px;
+    width: 500px;
+    margin-left: 500px;
     margin-top: -200px;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
   }
 
   .about-images {
     display: flex;
     column-gap: 15px;
     justify-content: center;
+  }
+
+  .mob-campaigns {
+    /* margin-left: 73px; */
   }
 
   .sponsors {
@@ -448,6 +566,10 @@ a {
   }
 
   .home-fot-cntnt {
-    margin-top: 50px;
+    margin-top: 130px;
+  }
+
+  .desk-fot-stngs {
+    margin-left: 80px;
   }
 }
