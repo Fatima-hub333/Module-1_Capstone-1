@@ -263,7 +263,6 @@ a {
   margin-top: 8px;
   font-weight: bold;
   text-align: justify;
-  max-width: 200px;
 }
 
 /* About_us Page CSS Start */
@@ -438,6 +437,10 @@ a {
     display: none;
   }
 
+  .container {
+    padding: 30px 85px;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -525,10 +528,6 @@ a {
     display: flex;
     column-gap: 15px;
     justify-content: center;
-  }
-
-  .mob-campaigns {
-    /* margin-left: 73px; */
   }
 
   .sponsors {
