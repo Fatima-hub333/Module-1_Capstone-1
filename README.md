@@ -8,6 +8,14 @@
 
 In this capstone project, I built an online website for a conference. I used the guidelines of the template created for Cindy Shin.The website is about Camp David conference of Group of Seven (G7). All the content was free images that I download from internet and design some of them with Canva.
 
+![screenshot](images/base/Capstone-1.png)
+
+## [LiveDemo] 
+(https://fatima-hub333.github.io/Module-1_Capstone-1/)
+
+## [VideoPresentationLink]
+(https://www.loom.com/share/505db0508b074b4e8a299783d8eb0719)
+
 ## Built With
 
 - HTML, CSS
